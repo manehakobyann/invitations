@@ -47,10 +47,8 @@ img{
 
 .language-switcher{
     position:fixed;
-
     top:25px;
     right:25px;
-
     z-index:9999;
 
     display:flex;
@@ -60,15 +58,12 @@ img{
     padding:10px 15px;
 
     background:rgba(245,241,234,.88);
-
     backdrop-filter:blur(12px);
 
     border:1px solid rgba(24,23,22,.18);
-
     border-radius:30px;
 
     font-size:9px;
-
     letter-spacing:2px;
 
     box-shadow:0 8px 30px rgba(0,0,0,.08);
@@ -76,19 +71,14 @@ img{
 
 .language-switcher button{
     border:0;
-
     background:none;
-
     padding:3px;
 
     font-family:'Montserrat',sans-serif;
-
     font-size:9px;
-
     letter-spacing:2px;
 
     color:#777067;
-
     cursor:pointer;
 
     transition:.3s ease;
@@ -100,7 +90,6 @@ img{
 
 .language-switcher button.active{
     color:#181716;
-
     font-weight:500;
 }
 
@@ -117,31 +106,24 @@ img{
     min-height:100vh;
 
     display:grid;
-
     grid-template-columns:45% 55%;
 
     background:#181716;
-
     color:#f5f1ea;
 }
 
 .hero-text{
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
 
     padding:8vw;
-
     position:relative;
 }
 
 .eyebrow{
     font-size:9px;
-
     letter-spacing:5px;
-
     text-transform:uppercase;
 
     color:#b9a98f;
@@ -161,20 +143,32 @@ img{
     letter-spacing:-5px;
 }
 
+/* FIRST NAME + LAST NAME */
+
 .names > span:first-child,
 .names > span:last-child{
     display:inline;
+
     font-size:1em;
+
     margin:0;
+
     color:inherit;
+
     letter-spacing:inherit;
 }
 
+/* AMPERSAND */
+
 .names > span:nth-child(2){
     display:block;
+
     font-size:.55em;
+
     margin:20px 0;
+
     color:#b9a98f;
+
     letter-spacing:0;
 }
 
@@ -196,7 +190,6 @@ img{
 
 .hero-photo img{
     width:100%;
-
     height:100%;
 
     object-fit:cover;
@@ -208,15 +201,12 @@ img{
     position:absolute;
 
     bottom:30px;
-
     right:35px;
 
     color:white;
 
     font-size:8px;
-
     letter-spacing:3px;
-
     text-transform:uppercase;
 }
 
@@ -229,9 +219,7 @@ img{
     min-height:70vh;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     text-align:center;
@@ -296,7 +284,6 @@ img{
 
 .story-photo img{
     width:100%;
-
     height:100%;
 
     object-fit:cover;
@@ -549,7 +536,7 @@ img{
 
 
 /* =====================================================
-   JOIN US BUTTON
+   JOIN BUTTON
 ===================================================== */
 
 .join-button{
@@ -884,9 +871,7 @@ footer{
 
     .language-switcher{
         top:15px;
-
         right:15px;
-
         padding:8px 12px;
     }
 
@@ -976,7 +961,6 @@ footer{
     .final-photo{
         height:65vh;
     }
-
 }
 
 
@@ -993,7 +977,6 @@ footer{
     .join-box h2{
         font-size:52px;
     }
-
 }
 
 </style>
@@ -1013,9 +996,7 @@ footer{
         id="langEN"
         class="active"
         onclick="changeLanguage('en')">
-
         EN
-
     </button>
 
     <span class="language-divider">·</span>
@@ -1023,9 +1004,7 @@ footer{
     <button
         id="langHY"
         onclick="changeLanguage('hy')">
-
         ՀԱՅ
-
     </button>
 
     <span class="language-divider">·</span>
@@ -1033,9 +1012,7 @@ footer{
     <button
         id="langRU"
         onclick="changeLanguage('ru')">
-
         RU
-
     </button>
 
 </div>
@@ -1047,70 +1024,61 @@ footer{
 
 <section class="hero">
 
-
     <div class="hero-text">
-
 
         <div
             class="eyebrow"
-
             data-en="Together with their families"
-
             data-hy="Իրենց ընտանիքների հետ միասին"
-
             data-ru="Вместе со своими семьями">
-
             Together with their families
-
         </div>
 
 
+        <!-- NAMES -->
         <h1 class="names">
 
-            Elise
+            <span
+                data-en="Elise"
+                data-hy="Էլիզ"
+                data-ru="Элиза">
+                Elise
+            </span>
 
             <span>&</span>
 
-            Daniel
+            <span
+                data-en="Daniel"
+                data-hy="Դանիել"
+                data-ru="Даниэль">
+                Daniel
+            </span>
 
         </h1>
 
 
         <div class="date">
-
             12 · 09 · 2028
-
         </div>
-
 
     </div>
 
 
     <div class="hero-photo">
 
-
         <img
             src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85"
-
             alt="Wedding">
-
 
         <div
             class="photo-label"
-
             data-en="Our beginning"
-
             data-hy="Մեր սկիզբը"
-
             data-ru="Наше начало">
-
             Our beginning
-
         </div>
 
-
     </div>
-
 
 </section>
 
@@ -1121,52 +1089,33 @@ footer{
 
 <section class="intro">
 
-
     <div class="intro-inner">
-
 
         <div
             class="small-title"
-
             data-en="The beginning of forever"
-
             data-hy="Հավերժության սկիզբը"
-
             data-ru="Начало нашей вечности">
-
             The beginning of forever
-
         </div>
 
 
         <h2
-
             data-en="We are getting married."
-
             data-hy="Մենք ամուսնանում ենք։"
-
             data-ru="Мы женимся.">
-
             We are getting married.
-
         </h2>
 
 
         <p
-
             data-en="With great joy, we invite you to celebrate this beautiful chapter of our lives with us. Your presence will make our day even more special."
-
             data-hy="Մեծ ուրախությամբ հրավիրում ենք ձեզ մեզ հետ նշելու մեր կյանքի այս գեղեցիկ նոր էջը։ Ձեր ներկայությունը մեր օրը կդարձնի էլ ավելի յուրահատուկ։"
-
             data-ru="С большой радостью приглашаем вас разделить с нами эту прекрасную главу нашей жизни. Ваше присутствие сделает наш день ещё более особенным.">
-
             With great joy, we invite you to celebrate this beautiful chapter of our lives with us. Your presence will make our day even more special.
-
         </p>
 
-
     </div>
-
 
 </section>
 
@@ -1177,62 +1126,41 @@ footer{
 
 <section class="story">
 
-
     <div class="story-photo">
 
-
         <img
-
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85"
-
             alt="Couple">
-
 
     </div>
 
 
     <div class="story-content">
 
-
         <div class="story-number">
-
             01
-
         </div>
 
 
         <h2
-
             data-en="A day to remember."
-
             data-hy="Օր, որը կհիշենք։"
-
             data-ru="День, который мы запомним.">
-
             A day<br>
-
             to remember.
-
         </h2>
 
 
         <p
-
             data-en="From the first moment to the last dance, we hope to share every beautiful moment surrounded by the people we love."
-
             data-hy="Առաջին պահից մինչև վերջին պարը ցանկանում ենք կիսվել յուրաքանչյուր գեղեցիկ պահով՝ շրջապատված մեր սիրելի մարդկանցով։"
-
             data-ru="От первого мгновения до последнего танца мы хотим разделить каждый прекрасный момент в окружении любимых людей.">
-
             From the first moment to the last dance,
             we hope to share every beautiful moment
             surrounded by the people we love.
-
         </p>
 
-
     </div>
-
 
 </section>
 
@@ -1243,35 +1171,22 @@ footer{
 
 <section class="event-section">
 
-
     <div class="section-heading">
 
-
         <span
-
             data-en="Save the date"
-
             data-hy="Նշեք օրը"
-
             data-ru="Сохраните дату">
-
             Save the date
-
         </span>
 
 
         <h2
-
             data-en="The Celebration"
-
             data-hy="Տոնակատարությունը"
-
             data-ru="Празднование">
-
             The Celebration
-
         </h2>
-
 
     </div>
 
@@ -1279,194 +1194,120 @@ footer{
     <div class="events">
 
 
-        <!-- EVENT 1 -->
-
         <div class="event">
 
-
             <div class="event-time">
-
                 15:30
-
             </div>
 
 
             <div class="event-info">
 
-
                 <h3
-
                     data-en="Wedding Ceremony"
-
                     data-hy="Պսակադրություն"
-
                     data-ru="Церемония бракосочетания">
-
                     Wedding Ceremony
-
                 </h3>
 
 
                 <p
-
                     data-en="St. Grigor Lusavorich Church"
-
                     data-hy="Սուրբ Գրիգոր Լուսավորիչ եկեղեցի"
-
                     data-ru="Церковь Святого Григория Просветителя">
-
                     St. Grigor Lusavorich Church
-
                 </p>
-
 
             </div>
 
 
             <div
-
                 class="event-location"
-
                 data-en="Yerevan"
-
                 data-hy="Երևան"
-
                 data-ru="Ереван">
-
                 Yerevan
-
             </div>
-
 
         </div>
 
 
-        <!-- EVENT 2 -->
-
         <div class="event">
 
-
             <div class="event-time">
-
                 18:00
-
             </div>
 
 
             <div class="event-info">
 
-
                 <h3
-
                     data-en="Dinner & Celebration"
-
                     data-hy="Ընթրիք և տոնակատարություն"
-
                     data-ru="Ужин и празднование">
-
                     Dinner & Celebration
-
                 </h3>
 
 
                 <p
-
                     data-en="Adana Complex"
-
                     data-hy="Ադանա համալիր"
-
                     data-ru="Adana Complex">
-
                     Adana Complex
-
                 </p>
-
 
             </div>
 
 
             <div
-
                 class="event-location"
-
                 data-en="Yerevan"
-
                 data-hy="Երևան"
-
                 data-ru="Ереван">
-
                 Yerevan
-
             </div>
-
 
         </div>
 
-
-        <!-- EVENT 3 -->
 
         <div class="event">
 
-
             <div class="event-time">
-
                 21:00
-
             </div>
 
 
             <div class="event-info">
 
-
                 <h3
-
                     data-en="Let the Party Begin"
-
                     data-hy="Թող խնջույքը սկսվի"
-
                     data-ru="Пусть праздник начнётся">
-
                     Let the Party Begin
-
                 </h3>
 
 
                 <p
-
                     data-en="Music · Dancing · Celebration"
-
                     data-hy="Երաժշտություն · Պար · Տոնակատարություն"
-
                     data-ru="Музыка · Танцы · Праздник">
-
                     Music · Dancing · Celebration
-
                 </p>
-
 
             </div>
 
 
             <div
-
                 class="event-location"
-
                 data-en="Reception"
-
                 data-hy="Ընդունելություն"
-
                 data-ru="Банкет">
-
                 Reception
-
             </div>
 
-
         </div>
-
 
     </div>
-
 
 </section>
 
@@ -1477,168 +1318,101 @@ footer{
 
 <section class="countdown-section">
 
-
     <div
-
         class="small-title"
-
         data-en="Counting the moments"
-
         data-hy="Հաշվում ենք պահերը"
-
         data-ru="Считаем мгновения">
-
         Counting the moments
-
     </div>
 
 
     <h2
-
         data-en="Until we say I do"
-
         data-hy="Մինչև մեր «Այո»-ն"
-
         data-ru="До нашего «Да»">
-
         Until we say I do
-
     </h2>
 
 
     <div class="countdown">
 
-
         <div class="count">
 
-
             <div
-
                 class="number"
-
                 id="days">
-
                 00
-
             </div>
 
-
             <div
-
                 class="label"
-
                 data-en="Days"
-
                 data-hy="Օր"
-
                 data-ru="Дней">
-
                 Days
-
             </div>
-
 
         </div>
 
 
         <div class="count">
 
-
             <div
-
                 class="number"
-
                 id="hours">
-
                 00
-
             </div>
 
-
             <div
-
                 class="label"
-
                 data-en="Hours"
-
                 data-hy="Ժամ"
-
                 data-ru="Часов">
-
                 Hours
-
             </div>
-
 
         </div>
 
 
         <div class="count">
 
-
             <div
-
                 class="number"
-
                 id="minutes">
-
                 00
-
             </div>
-
 
             <div
-
                 class="label"
-
                 data-en="Minutes"
-
                 data-hy="Րոպե"
-
                 data-ru="Минут">
-
                 Minutes
-
             </div>
-
 
         </div>
 
 
         <div class="count">
 
-
             <div
-
                 class="number"
-
                 id="seconds">
-
                 00
-
             </div>
-
 
             <div
-
                 class="label"
-
                 data-en="Seconds"
-
                 data-hy="Վայրկյան"
-
                 data-ru="Секунд">
-
                 Seconds
-
             </div>
-
 
         </div>
-
 
     </div>
-
 
 </section>
 
@@ -1649,421 +1423,242 @@ footer{
 
 <section class="join-section" id="join">
 
-
     <div class="join-box">
 
-
         <div
-
             class="small-title"
-
             data-en="We hope to see you"
-
             data-hy="Սպասում ենք ձեզ"
-
             data-ru="Мы будем рады вас видеть">
-
             We hope to see you
-
         </div>
 
 
         <h2
-
             data-en="Join Us"
-
             data-hy="Միացեք մեզ"
-
             data-ru="Присоединяйтесь">
-
             Join Us
-
         </h2>
 
 
         <p
-
             data-en="Please let us know if you will be celebrating this special day with us."
-
             data-hy="Խնդրում ենք տեղեկացնել՝ կմիանա՞ք մեզ այս հատուկ օրվա տոնակատարությանը։"
-
             data-ru="Пожалуйста, сообщите нам, будете ли вы праздновать этот особенный день вместе с нами.">
-
             Please let us know if you will be celebrating
             this special day with us.
-
         </p>
 
 
-        <!-- JOIN US BUTTON -->
-
         <a
-
             href="#joinForm"
-
             class="join-button"
-
             id="joinButton"
-
             data-en="Join Us"
-
             data-hy="Միացեք մեզ"
-
             data-ru="Присоединяйтесь">
-
             Join Us
-
         </a>
 
 
         <!-- FORM -->
 
         <form
-
             class="join-form"
-
             id="joinForm">
 
 
-            <!-- NAME -->
-
             <div class="form-group">
 
-
                 <label
-
                     data-en="Your name"
-
                     data-hy="Ձեր անունը"
-
                     data-ru="Ваше имя">
-
                     Your name
-
                 </label>
 
-
                 <input
-
                     type="text"
-
                     id="guestName"
-
                     required
-
                     data-placeholder-en="Your name"
-
                     data-placeholder-hy="Ձեր անունը"
-
                     data-placeholder-ru="Ваше имя"
-
                     placeholder="Your name">
-
 
             </div>
 
 
-            <!-- ATTENDANCE -->
-
             <div class="form-group">
 
-
                 <label
-
                     data-en="Will you attend?"
-
                     data-hy="Կմիանա՞ք մեզ"
-
                     data-ru="Вы будете присутствовать?">
-
                     Will you attend?
-
                 </label>
 
 
                 <div class="attendance-options">
 
-
                     <div class="attendance-option">
 
-
                         <input
-
                             type="radio"
-
                             name="attendance"
-
                             id="attending"
-
                             value="yes"
-
                             required>
 
-
                         <label
-
                             for="attending"
-
                             data-en="Yes, I'll be there"
-
                             data-hy="Այո, կմիանամ"
-
                             data-ru="Да, я буду">
-
                             Yes, I'll be there
-
                         </label>
-
 
                     </div>
 
 
                     <div class="attendance-option">
 
-
                         <input
-
                             type="radio"
-
                             name="attendance"
-
                             id="notAttending"
-
                             value="no">
 
-
                         <label
-
                             for="notAttending"
-
                             data-en="Sadly, I can't"
-
                             data-hy="Ցավոք, չեմ կարող"
-
                             data-ru="К сожалению, не смогу">
-
                             Sadly, I can't
-
                         </label>
 
-
                     </div>
-
 
                 </div>
 
-
             </div>
 
 
-            <!-- NUMBER OF GUESTS -->
-
             <div class="form-group">
 
-
                 <label
-
                     data-en="Number of guests"
-
                     data-hy="Հյուրերի քանակը"
-
                     data-ru="Количество гостей">
-
                     Number of guests
-
                 </label>
 
 
-                <select
-
-                    id="guestCount"
-
-                    required>
-
+                <select id="guestCount" required>
 
                     <option
-
                         value=""
-
                         data-en="Select"
-
                         data-hy="Ընտրել"
-
                         data-ru="Выберите">
-
                         Select
-
                     </option>
 
+                    <option value="1">1</option>
 
-                    <option value="1">
-                        1
-                    </option>
+                    <option value="2">2</option>
 
+                    <option value="3">3</option>
 
-                    <option value="2">
-                        2
-                    </option>
+                    <option value="4">4</option>
 
-
-                    <option value="3">
-                        3
-                    </option>
-
-
-                    <option value="4">
-                        4
-                    </option>
-
-
-                    <option value="5">
-                        5
-                    </option>
-
+                    <option value="5">5</option>
 
                 </select>
-
 
             </div>
 
 
-            <!-- SIDE -->
-
             <div class="form-group">
 
-
                 <label
-
                     data-en="Coming from"
-
                     data-hy="Ո՞ր կողմի հյուրն եք"
-
                     data-ru="С чьей стороны вы приглашены">
-
                     Coming from
-
                 </label>
 
 
                 <div class="side-options">
 
-
                     <label>
 
-
                         <input
-
                             type="radio"
-
                             name="side"
-
                             value="bride"
-
                             required>
 
-
                         <span
-
                             data-en="Bride's side"
-
                             data-hy="Հարսի կողմ"
-
                             data-ru="Со стороны невесты">
-
                             Bride's side
-
                         </span>
-
 
                     </label>
 
 
                     <label>
 
-
                         <input
-
                             type="radio"
-
                             name="side"
-
                             value="groom">
 
-
                         <span
-
                             data-en="Groom's side"
-
                             data-hy="Փեսայի կողմ"
-
                             data-ru="Со стороны жениха">
-
                             Groom's side
-
                         </span>
-
 
                     </label>
 
-
                 </div>
-
 
             </div>
 
 
-            <!-- MESSAGE -->
-
             <div class="form-group">
 
-
                 <label
-
                     data-en="A message for us"
-
                     data-hy="Հաղորդագրություն մեզ համար"
-
                     data-ru="Сообщение для нас">
-
                     A message for us
-
                 </label>
 
 
                 <textarea
-
                     id="guestMessage"
-
                     data-placeholder-en="Write something..."
-
                     data-placeholder-hy="Գրեք ինչ-որ բան..."
-
                     data-placeholder-ru="Напишите что-нибудь..."
-
                     placeholder="Write something..."></textarea>
-
 
             </div>
 
 
-            <!-- SUBMIT -->
-
             <button
-
                 type="submit"
-
                 class="join-submit"
-
                 data-en="Join Us"
-
                 data-hy="Միացեք մեզ"
-
                 data-ru="Присоединяйтесь">
-
                 Join Us
-
             </button>
-
 
         </form>
 
@@ -2071,46 +1666,29 @@ footer{
         <!-- SUCCESS -->
 
         <div
-
             class="join-success"
-
             id="joinSuccess">
 
-
             <div
-
                 class="success-title"
-
                 data-en="Thank you ♡"
-
                 data-hy="Շնորհակալություն ♡"
-
                 data-ru="Спасибо ♡">
-
                 Thank you ♡
-
             </div>
 
 
             <p
-
                 data-en="Your response has been received. We can't wait to celebrate with you."
-
                 data-hy="Ձեր պատասխանը ստացվել է։ Մենք անհամբեր սպասում ենք ձեզ հետ տոնելուն։"
-
                 data-ru="Ваш ответ получен. Мы с нетерпением ждём возможности отпраздновать вместе с вами.">
-
                 Your response has been received.
                 We can't wait to celebrate with you.
-
             </p>
-
 
         </div>
 
-
     </div>
-
 
 </section>
 
@@ -2121,32 +1699,21 @@ footer{
 
 <section class="final-photo">
 
-
     <img
-
         src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=90"
-
         alt="Wedding celebration">
 
 
     <div class="final-overlay">
 
-
         <h2
-
             data-en="See you there."
-
             data-hy="Կհանդիպենք այնտեղ։"
-
             data-ru="До встречи!">
-
             See you there.
-
         </h2>
 
-
     </div>
-
 
 </section>
 
@@ -2157,20 +1724,21 @@ footer{
 
 <footer>
 
-
     <div class="footer-names">
 
-        Elise & Daniel
+        <span
+            data-en="Elise & Daniel"
+            data-hy="Էլիզ & Դանիել"
+            data-ru="Элиза & Даниэль">
+            Elise & Daniel
+        </span>
 
     </div>
 
 
     <div class="footer-date">
-
         12 · 09 · 2028
-
     </div>
-
 
 </footer>
 
@@ -2199,11 +1767,8 @@ function updateCountdown(){
     if(distance <= 0){
 
         document.getElementById("days").innerHTML = "00";
-
         document.getElementById("hours").innerHTML = "00";
-
         document.getElementById("minutes").innerHTML = "00";
-
         document.getElementById("seconds").innerHTML = "00";
 
         return;
@@ -2278,36 +1843,30 @@ setInterval(
 ===================================================== */
 
 let currentLanguage =
-    localStorage.getItem(
-        "invitationLanguage"
-    ) || "en";
+    localStorage.getItem("invitationLanguage") || "en";
 
 
 function changeLanguage(language){
 
-    currentLanguage =
-        language;
-
+    currentLanguage = language;
 
     localStorage.setItem(
         "invitationLanguage",
         language
     );
 
-
-    document.documentElement.lang =
-        language;
+    document.documentElement.lang = language;
 
 
-    /* TEXT */
+    /*
+       CHANGE ALL TEXT
+    */
 
     document
-        .querySelectorAll(
-            "[data-" + language + "]"
-        )
-        .forEach(element => {
+        .querySelectorAll("[data-" + language + "]")
+        .forEach(function(element){
 
-            element.innerHTML =
+            element.textContent =
                 element.getAttribute(
                     "data-" + language
                 );
@@ -2315,13 +1874,15 @@ function changeLanguage(language){
         });
 
 
-    /* PLACEHOLDERS */
+    /*
+       CHANGE INPUT PLACEHOLDERS
+    */
 
     document
         .querySelectorAll(
             "[data-placeholder-" + language + "]"
         )
-        .forEach(element => {
+        .forEach(function(element){
 
             element.placeholder =
                 element.getAttribute(
@@ -2331,17 +1892,17 @@ function changeLanguage(language){
         });
 
 
-    /* LANGUAGE BUTTONS */
+    /*
+       CHANGE ACTIVE LANGUAGE BUTTON
+    */
 
     document
         .querySelectorAll(
             ".language-switcher button"
         )
-        .forEach(button => {
+        .forEach(function(button){
 
-            button.classList.remove(
-                "active"
-            );
+            button.classList.remove("active");
 
         });
 
@@ -2354,7 +1915,6 @@ function changeLanguage(language){
 
     }
 
-
     if(language === "hy"){
 
         document
@@ -2362,7 +1922,6 @@ function changeLanguage(language){
             .classList.add("active");
 
     }
-
 
     if(language === "ru"){
 
@@ -2380,14 +1939,10 @@ function changeLanguage(language){
 ===================================================== */
 
 const joinButton =
-    document.getElementById(
-        "joinButton"
-    );
+    document.getElementById("joinButton");
 
 const joinForm =
-    document.getElementById(
-        "joinForm"
-    );
+    document.getElementById("joinForm");
 
 
 joinButton.addEventListener(
@@ -2396,22 +1951,16 @@ joinButton.addEventListener(
 
         event.preventDefault();
 
+        joinForm.style.display = "block";
 
-        joinForm.style.display =
-            "block";
+        setTimeout(function(){
 
+            joinForm.scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
 
-        setTimeout(
-            function(){
-
-                joinForm.scrollIntoView({
-                    behavior:"smooth",
-                    block:"center"
-                });
-
-            },
-            50
-        );
+        },50);
 
     }
 );
@@ -2422,9 +1971,7 @@ joinButton.addEventListener(
 ===================================================== */
 
 const joinSuccess =
-    document.getElementById(
-        "joinSuccess"
-    );
+    document.getElementById("joinSuccess");
 
 
 joinForm.addEventListener(
@@ -2433,14 +1980,9 @@ joinForm.addEventListener(
 
         event.preventDefault();
 
+        joinForm.style.display = "none";
 
-        joinForm.style.display =
-            "none";
-
-
-        joinSuccess.style.display =
-            "block";
-
+        joinSuccess.style.display = "block";
 
         joinSuccess.scrollIntoView({
             behavior:"smooth",
@@ -2452,15 +1994,12 @@ joinForm.addEventListener(
 
 
 /* =====================================================
-   LOAD SAVED LANGUAGE
+   LOAD LANGUAGE
 ===================================================== */
 
-changeLanguage(
-    currentLanguage
-);
+changeLanguage(currentLanguage);
 
 </script>
-
 
 </body>
 </html>
