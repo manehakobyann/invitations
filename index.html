@@ -1,1 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Elise & Daniel — Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f1ea;
+    color: #181716;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #181716;
+    color: #f5f1ea;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8vw;
+    position: relative;
+}
+
+.eyebrow {
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #b9a98f;
+    margin-bottom: 35px;
+}
+
+.names {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(75px, 10vw, 145px);
+    line-height: .75;
+    letter-spacing: -5px;
+}
+
+.names span {
+    display: block;
+    font-size: .55em;
+    margin: 20px 0;
+    color: #b9a98f;
+    letter-spacing: 0;
+}
+
+.date {
+    margin-top: 55px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.hero-photo {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.75);
+}
+
+.photo-label {
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+    color: white;
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 8vw;
+}
+
+.intro-inner {
+    max-width: 800px;
+}
+
+.small-title {
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9b8972;
+    margin-bottom: 25px;
+}
+
+.intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(50px, 7vw, 90px);
+    font-weight: 300;
+    line-height: .95;
+}
+
+.intro p {
+    max-width: 580px;
+    margin: 35px auto 0;
+    font-size: 13px;
+    line-height: 2;
+    color: #68615a;
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 700px;
+}
+
+.story-photo {
+    min-height: 650px;
+}
+
+.story-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.7);
+}
+
+.story-content {
+    background: #e9e1d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vw;
+}
+
+.story-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #9b8972;
+    margin-bottom: 25px;
+}
+
+.story-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: .95;
+}
+
+.story-content p {
+    margin-top: 30px;
+    max-width: 450px;
+    font-size: 12px;
+    line-height: 2;
+    color: #655d55;
+}
+
+/* =========================
+   EVENT
+========================= */
+
+.event-section {
+    padding: 130px 7vw;
+    background: #f5f1ea;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-heading span {
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9b8972;
+}
+
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.events {
+    max-width: 1000px;
+    margin: auto;
+    border-top: 1px solid #cfc6ba;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 170px 1fr 180px;
+    align-items: center;
+    padding: 35px 0;
+    border-bottom: 1px solid #cfc6ba;
+}
+
+.event-time {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+}
+
+.event-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.event-info p {
+    margin-top: 7px;
+    font-size: 10px;
+    color: #777067;
+}
+
+.event-location {
+    text-align: right;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #776c61;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section {
+    background: #181716;
+    color: #f5f1ea;
+    text-align: center;
+    padding: 110px 5vw;
+}
+
+.countdown-section .small-title {
+    color: #b9a98f;
+}
+
+.countdown-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.countdown {
+    max-width: 800px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #4b4742;
+    border-bottom: 1px solid #4b4742;
+}
+
+.count {
+    padding: 30px 10px;
+    border-right: 1px solid #4b4742;
+}
+
+.count:last-child {
+    border-right: none;
+}
+
+.number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaa095;
+}
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp {
+    padding: 130px 7vw;
+    background: #e9e1d5;
+}
+
+.rsvp-box {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.rsvp-box h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 75px;
+    font-weight: 300;
+}
+
+.rsvp-box p {
+    margin: 25px auto 45px;
+    max-width: 500px;
+    font-size: 12px;
+    line-height: 1.9;
+    color: #655d55;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 16px 40px;
+    border: 1px solid #181716;
+    color: #181716;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.rsvp-button:hover {
+    background: #181716;
+    color: white;
+}
+
+/* =========================
+   FINAL PHOTO
+========================= */
+
+.final-photo {
+    height: 75vh;
+    position: relative;
+}
+
+.final-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.65);
+}
+
+.final-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,.2);
+}
+
+.final-overlay h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(60px, 9vw, 130px);
+    font-weight: 300;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 70px 20px;
+    background: #181716;
+    color: #f5f1ea;
+    text-align: center;
+}
+
+.footer-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+}
+
+.footer-date {
+    margin-top: 15px;
+    font-size: 8px;
+    letter-spacing: 4px;
+    color: #a89c8e;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        min-height: 65vh;
+        padding: 50px 8vw;
+    }
+
+    .hero-photo {
+        min-height: 65vh;
+    }
+
+    .names {
+        font-size: 78px;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+    }
+
+    .story-photo {
+        min-height: 500px;
+    }
+
+    .story-content {
+        padding: 80px 8vw;
+    }
+
+    .story-content h2 {
+        font-size: 55px;
+    }
+
+    .event {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 30px 0;
+    }
+
+    .event-location {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .section-heading h2 {
+        font-size: 55px;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .count:nth-child(1),
+    .count:nth-child(2) {
+        border-bottom: 1px solid #4b4742;
+    }
+
+    .count:nth-child(2) {
+        border-right: none;
+    }
+
+    .rsvp-box h2 {
+        font-size: 60px;
+    }
+
+    .final-photo {
+        height: 65vh;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="eyebrow">
+            Together with their families
+        </div>
+
+        <h1 class="names">
+            Elise
+            <span>&</span>
+            Daniel
+        </h1>
+
+        <div class="date">
+            12 · 09 · 2028
+        </div>
+
+    </div>
+
+    <div class="hero-photo">
+
+        <img
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85"
+            alt="Wedding">
+
+        <div class="photo-label">
+            Our beginning
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+    <div class="intro-inner">
+
+        <div class="small-title">
+            The beginning of forever
+        </div>
+
+        <h2>
+            We are getting married.
+        </h2>
+
+        <p>
+            With great joy, we invite you to celebrate
+            this beautiful chapter of our lives with us.
+            Your presence will make our day even more special.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section class="story">
+
+    <div class="story-photo">
+
+        <img
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85"
+            alt="Couple">
+
+    </div>
+
+    <div class="story-content">
+
+        <div class="story-number">
+            01
+        </div>
+
+        <h2>
+            A day<br>
+            to remember.
+        </h2>
+
+        <p>
+            From the first moment to the last dance,
+            we hope to share every beautiful moment
+            surrounded by the people we love.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- EVENT -->
+
+<section class="event-section">
+
+    <div class="section-heading">
+
+        <span>
+            Save the date
+        </span>
+
+        <h2>
+            The Celebration
+        </h2>
+
+    </div>
+
+    <div class="events">
+
+        <div class="event">
+
+            <div class="event-time">
+                15:30
+            </div>
+
+            <div class="event-info">
+
+                <h3>
+                    Wedding Ceremony
+                </h3>
+
+                <p>
+                    St. Grigor Lusavorich Church
+                </p>
+
+            </div>
+
+            <div class="event-location">
+                Yerevan
+            </div>
+
+        </div>
+
+
+        <div class="event">
+
+            <div class="event-time">
+                18:00
+            </div>
+
+            <div class="event-info">
+
+                <h3>
+                    Dinner & Celebration
+                </h3>
+
+                <p>
+                    Adana Complex
+                </p>
+
+            </div>
+
+            <div class="event-location">
+                Yerevan
+            </div>
+
+        </div>
+
+
+        <div class="event">
+
+            <div class="event-time">
+                21:00
+            </div>
+
+            <div class="event-info">
+
+                <h3>
+                    Let the Party Begin
+                </h3>
+
+                <p>
+                    Music · Dancing · Celebration
+                </p>
+
+            </div>
+
+            <div class="event-location">
+                Reception
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section class="countdown-section">
+
+    <div class="small-title">
+        Counting the moments
+    </div>
+
+    <h2>
+        Until we say I do
+    </h2>
+
+    <div class="countdown">
+
+        <div class="count">
+
+            <div class="number" id="days">
+                00
+            </div>
+
+            <div class="label">
+                Days
+            </div>
+
+        </div>
+
+        <div class="count">
+
+            <div class="number" id="hours">
+                00
+            </div>
+
+            <div class="label">
+                Hours
+            </div>
+
+        </div>
+
+        <div class="count">
+
+            <div class="number" id="minutes">
+                00
+            </div>
+
+            <div class="label">
+                Minutes
+            </div>
+
+        </div>
+
+        <div class="count">
+
+            <div class="number" id="seconds">
+                00
+            </div>
+
+            <div class="label">
+                Seconds
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RSVP -->
+
+<section class="rsvp">
+
+    <div class="rsvp-box">
+
+        <div class="small-title">
+            We hope to see you
+        </div>
+
+        <h2>
+            Join Us
+        </h2>
+
+        <p>
+            Please let us know if you will be celebrating
+            with us. We cannot wait to share this special
+            day with you.
+        </p>
+
+        <a href="#" class="rsvp-button">
+            RSVP
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL PHOTO -->
+
+<section class="final-photo">
+
+    <img
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=90"
+        alt="Wedding celebration">
+
+    <div class="final-overlay">
+
+        <h2>
+            See you there.
+        </h2>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-names">
+        Elise & Daniel
+    </div>
+
+    <div class="footer-date">
+        12 · 09 · 2028
+    </div>
+
+</footer>
+
+
+<script>
+
+const weddingDate =
+    new Date("September 12, 2028 15:30:00").getTime();
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+
+        return;
+    }
+
+    const days =
+        Math.floor(
+            distance / (1000 * 60 * 60 * 24)
+        );
+
+    const hours =
+        Math.floor(
+            (distance % (1000 * 60 * 60 * 24))
+            / (1000 * 60 * 60)
+        );
+
+    const minutes =
+        Math.floor(
+            (distance % (1000 * 60 * 60))
+            / (1000 * 60)
+        );
+
+    const seconds =
+        Math.floor(
+            (distance % (1000 * 60))
+            / 1000
+        );
+
+    document.getElementById("days").innerHTML =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerHTML =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerHTML =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerHTML =
+        String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+
+setInterval(updateCountdown, 1000);
+
+</script>
+
+</body>
+</html>
