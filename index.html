@@ -13,6 +13,10 @@
 
 <style>
 
+/* =====================================================
+   GENERAL
+===================================================== */
+
 *{
     margin:0;
     padding:0;
@@ -28,16 +32,25 @@ body{
     color:#181716;
     font-family:'Montserrat',sans-serif;
     font-weight:300;
+    overflow-x:hidden;
 }
 
-/* =========================
+img{
+    display:block;
+    max-width:100%;
+}
+
+
+/* =====================================================
    LANGUAGE SWITCHER
-========================= */
+===================================================== */
 
 .language-switcher{
     position:fixed;
+
     top:25px;
     right:25px;
+
     z-index:9999;
 
     display:flex;
@@ -47,12 +60,15 @@ body{
     padding:10px 15px;
 
     background:rgba(245,241,234,.88);
+
     backdrop-filter:blur(12px);
 
     border:1px solid rgba(24,23,22,.18);
+
     border-radius:30px;
 
     font-size:9px;
+
     letter-spacing:2px;
 
     box-shadow:0 8px 30px rgba(0,0,0,.08);
@@ -60,14 +76,19 @@ body{
 
 .language-switcher button{
     border:0;
+
     background:none;
+
     padding:3px;
 
     font-family:'Montserrat',sans-serif;
+
     font-size:9px;
+
     letter-spacing:2px;
 
     color:#777067;
+
     cursor:pointer;
 
     transition:.3s ease;
@@ -79,6 +100,7 @@ body{
 
 .language-switcher button.active{
     color:#181716;
+
     font-weight:500;
 }
 
@@ -86,89 +108,129 @@ body{
     color:#aaa095;
 }
 
-/* =========================
+
+/* =====================================================
    HERO
-========================= */
+===================================================== */
 
 .hero{
     min-height:100vh;
+
     display:grid;
+
     grid-template-columns:45% 55%;
+
     background:#181716;
+
     color:#f5f1ea;
 }
 
 .hero-text{
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     padding:8vw;
+
     position:relative;
 }
 
 .eyebrow{
     font-size:9px;
+
     letter-spacing:5px;
+
     text-transform:uppercase;
+
     color:#b9a98f;
+
     margin-bottom:35px;
 }
 
 .names{
     font-family:'Cormorant Garamond',serif;
+
     font-weight:300;
+
     font-size:clamp(75px,10vw,145px);
+
     line-height:.75;
+
     letter-spacing:-5px;
 }
 
 .names span{
     display:block;
+
     font-size:.55em;
+
     margin:20px 0;
+
     color:#b9a98f;
+
     letter-spacing:0;
 }
 
 .date{
     margin-top:55px;
+
     font-size:11px;
+
     letter-spacing:5px;
 }
 
 .hero-photo{
     position:relative;
+
     overflow:hidden;
+
     min-height:100vh;
 }
 
 .hero-photo img{
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
     filter:saturate(.75);
 }
 
 .photo-label{
     position:absolute;
+
     bottom:30px;
+
     right:35px;
+
     color:white;
+
     font-size:8px;
+
     letter-spacing:3px;
+
     text-transform:uppercase;
 }
 
-/* =========================
+
+/* =====================================================
    INTRO
-========================= */
+===================================================== */
 
 .intro{
     min-height:70vh;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     text-align:center;
+
     padding:100px 8vw;
 }
 
@@ -178,34 +240,48 @@ body{
 
 .small-title{
     font-size:9px;
+
     letter-spacing:5px;
+
     text-transform:uppercase;
+
     color:#9b8972;
+
     margin-bottom:25px;
 }
 
 .intro h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(50px,7vw,90px);
+
     font-weight:300;
+
     line-height:.95;
 }
 
 .intro p{
     max-width:580px;
+
     margin:35px auto 0;
+
     font-size:13px;
+
     line-height:2;
+
     color:#68615a;
 }
 
-/* =========================
+
+/* =====================================================
    STORY
-========================= */
+===================================================== */
 
 .story{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     min-height:700px;
 }
 
@@ -215,116 +291,161 @@ body{
 
 .story-photo img{
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
     filter:saturate(.7);
 }
 
 .story-content{
     background:#e9e1d5;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     padding:10vw;
 }
 
 .story-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:20px;
+
     color:#9b8972;
+
     margin-bottom:25px;
 }
 
 .story-content h2{
     font-family:'Cormorant Garamond',serif;
+
     font-weight:300;
+
     font-size:65px;
+
     line-height:.95;
 }
 
 .story-content p{
     margin-top:30px;
+
     max-width:450px;
+
     font-size:12px;
+
     line-height:2;
+
     color:#655d55;
 }
 
-/* =========================
+
+/* =====================================================
    EVENTS
-========================= */
+===================================================== */
 
 .event-section{
     padding:130px 7vw;
+
     background:#f5f1ea;
 }
 
 .section-heading{
     text-align:center;
+
     margin-bottom:80px;
 }
 
 .section-heading span{
     font-size:9px;
+
     letter-spacing:5px;
+
     text-transform:uppercase;
+
     color:#9b8972;
 }
 
 .section-heading h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:70px;
+
     font-weight:300;
+
     margin-top:15px;
 }
 
 .events{
     max-width:1000px;
+
     margin:auto;
+
     border-top:1px solid #cfc6ba;
 }
 
 .event{
     display:grid;
+
     grid-template-columns:170px 1fr 180px;
+
     align-items:center;
+
     padding:35px 0;
+
     border-bottom:1px solid #cfc6ba;
 }
 
 .event-time{
     font-family:'Cormorant Garamond',serif;
+
     font-size:32px;
 }
 
 .event-info h3{
     font-family:'Cormorant Garamond',serif;
+
     font-size:30px;
+
     font-weight:400;
 }
 
 .event-info p{
     margin-top:7px;
+
     font-size:10px;
+
     color:#777067;
 }
 
 .event-location{
     text-align:right;
+
     font-size:9px;
+
     letter-spacing:2px;
+
     text-transform:uppercase;
+
     color:#776c61;
 }
 
-/* =========================
+
+/* =====================================================
    COUNTDOWN
-========================= */
+===================================================== */
 
 .countdown-section{
     background:#181716;
+
     color:#f5f1ea;
+
     text-align:center;
+
     padding:110px 5vw;
 }
 
@@ -334,21 +455,29 @@ body{
 
 .countdown-section h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:65px;
+
     font-weight:300;
 }
 
 .countdown{
     max-width:800px;
+
     margin:60px auto 0;
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     border-top:1px solid #4b4742;
+
     border-bottom:1px solid #4b4742;
 }
 
 .count{
     padding:30px 10px;
+
     border-right:1px solid #4b4742;
 }
 
@@ -358,128 +487,401 @@ body{
 
 .number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:55px;
 }
 
 .label{
     margin-top:5px;
+
     font-size:8px;
+
     letter-spacing:3px;
+
     text-transform:uppercase;
+
     color:#aaa095;
 }
 
-/* =========================
-   RSVP
-========================= */
 
-.rsvp{
+/* =====================================================
+   JOIN US
+===================================================== */
+
+.join-section{
     padding:130px 7vw;
+
     background:#e9e1d5;
 }
 
-.rsvp-box{
-    max-width:650px;
+.join-box{
+    max-width:700px;
+
     margin:auto;
+
     text-align:center;
 }
 
-.rsvp-box h2{
+.join-box h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:75px;
+
     font-weight:300;
 }
 
-.rsvp-box p{
-    margin:25px auto 45px;
+.join-box > p{
+    margin:25px auto 50px;
+
     max-width:500px;
+
     font-size:12px;
+
     line-height:1.9;
+
     color:#655d55;
 }
 
-.rsvp-button{
+
+/* =====================================================
+   JOIN US BUTTON
+===================================================== */
+
+.join-button{
     display:inline-block;
-    padding:16px 40px;
+
+    padding:17px 45px;
+
     border:1px solid #181716;
-    color:#181716;
-    text-decoration:none;
-    font-size:9px;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    transition:.3s;
-}
 
-.rsvp-button:hover{
     background:#181716;
+
     color:white;
+
+    text-decoration:none;
+
+    font-size:9px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    transition:.3s ease;
+
+    cursor:pointer;
 }
 
-/* =========================
+.join-button:hover{
+    background:transparent;
+
+    color:#181716;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.join-form{
+    display:none;
+
+    margin-top:45px;
+
+    background:rgba(255,255,255,.45);
+
+    border:1px solid rgba(24,23,22,.15);
+
+    padding:45px;
+
+    text-align:left;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+
+    margin-bottom:9px;
+
+    font-size:9px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#655d55;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+
+    border:0;
+
+    border-bottom:1px solid #bdb2a6;
+
+    background:transparent;
+
+    padding:12px 4px;
+
+    outline:none;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:13px;
+
+    color:#181716;
+}
+
+.form-group textarea{
+    min-height:110px;
+
+    resize:vertical;
+
+    border:1px solid #bdb2a6;
+
+    padding:12px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#181716;
+}
+
+
+/* =====================================================
+   ATTENDANCE
+===================================================== */
+
+.attendance-options{
+    display:flex;
+
+    gap:12px;
+}
+
+.attendance-option{
+    flex:1;
+}
+
+.attendance-option input{
+    display:none;
+}
+
+.attendance-option label{
+    display:block;
+
+    padding:15px 10px;
+
+    border:1px solid #bdb2a6;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+
+    transition:.3s ease;
+}
+
+.attendance-option input:checked + label{
+    background:#181716;
+
+    color:white;
+
+    border-color:#181716;
+}
+
+
+/* =====================================================
+   SIDE
+===================================================== */
+
+.side-options{
+    display:flex;
+
+    gap:25px;
+}
+
+.side-options label{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:11px;
+
+    text-transform:none;
+
+    letter-spacing:0;
+
+    cursor:pointer;
+}
+
+.side-options input{
+    width:auto;
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.join-submit{
+    width:100%;
+
+    padding:17px;
+
+    border:1px solid #181716;
+
+    background:#181716;
+
+    color:white;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:9px;
+
+    letter-spacing:4px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.join-submit:hover{
+    background:transparent;
+
+    color:#181716;
+}
+
+
+/* =====================================================
+   SUCCESS
+===================================================== */
+
+.join-success{
+    display:none;
+
+    padding:50px 20px;
+
+    text-align:center;
+}
+
+.success-title{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    font-weight:300;
+}
+
+.join-success p{
+    margin-top:18px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#655d55;
+}
+
+
+/* =====================================================
    FINAL PHOTO
-========================= */
+===================================================== */
 
 .final-photo{
     height:75vh;
+
     position:relative;
 }
 
 .final-photo img{
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
     filter:saturate(.65);
 }
 
 .final-overlay{
     position:absolute;
+
     inset:0;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     text-align:center;
+
     color:white;
+
     background:rgba(0,0,0,.2);
 }
 
 .final-overlay h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(60px,9vw,130px);
+
     font-weight:300;
 }
 
-/* =========================
+
+/* =====================================================
    FOOTER
-========================= */
+===================================================== */
 
 footer{
     padding:70px 20px;
+
     background:#181716;
+
     color:#f5f1ea;
+
     text-align:center;
 }
 
 .footer-names{
     font-family:'Cormorant Garamond',serif;
+
     font-size:45px;
 }
 
 .footer-date{
     margin-top:15px;
+
     font-size:8px;
+
     letter-spacing:4px;
+
     color:#a89c8e;
 }
 
-/* =========================
+
+/* =====================================================
    MOBILE
-========================= */
+===================================================== */
 
 @media(max-width:700px){
 
     .language-switcher{
         top:15px;
+
         right:15px;
+
         padding:8px 12px;
     }
 
@@ -489,6 +891,7 @@ footer{
 
     .hero-text{
         min-height:65vh;
+
         padding:50px 8vw;
     }
 
@@ -518,12 +921,15 @@ footer{
 
     .event{
         grid-template-columns:1fr;
+
         gap:10px;
+
         padding:30px 0;
     }
 
     .event-location{
         text-align:left;
+
         margin-top:5px;
     }
 
@@ -544,23 +950,57 @@ footer{
         border-right:none;
     }
 
-    .rsvp-box h2{
+    .join-box h2{
         font-size:60px;
+    }
+
+    .join-form{
+        padding:28px 20px;
+    }
+
+    .attendance-options{
+        flex-direction:column;
+    }
+
+    .side-options{
+        flex-direction:column;
+
+        gap:12px;
     }
 
     .final-photo{
         height:65vh;
     }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media(max-width:390px){
+
+    .names{
+        font-size:65px;
+    }
+
+    .join-box h2{
+        font-size:52px;
+    }
+
 }
 
 </style>
 </head>
 
+
 <body>
 
-<!-- =========================
+
+<!-- =====================================================
      LANGUAGE SWITCHER
-========================= -->
+===================================================== -->
 
 <div class="language-switcher">
 
@@ -568,7 +1008,9 @@ footer{
         id="langEN"
         class="active"
         onclick="changeLanguage('en')">
+
         EN
+
     </button>
 
     <span class="language-divider">·</span>
@@ -576,7 +1018,9 @@ footer{
     <button
         id="langHY"
         onclick="changeLanguage('hy')">
+
         ՀԱՅ
+
     </button>
 
     <span class="language-divider">·</span>
@@ -584,29 +1028,37 @@ footer{
     <button
         id="langRU"
         onclick="changeLanguage('ru')">
+
         RU
+
     </button>
 
 </div>
 
 
-<!-- =========================
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <section class="hero">
 
+
     <div class="hero-text">
+
 
         <div
             class="eyebrow"
+
             data-en="Together with their families"
+
             data-hy="Իրենց ընտանիքների հետ միասին"
+
             data-ru="Вместе со своими семьями">
 
             Together with their families
 
         </div>
+
 
         <h1 class="names">
 
@@ -618,48 +1070,63 @@ footer{
 
         </h1>
 
+
         <div class="date">
+
             12 · 09 · 2028
+
         </div>
+
 
     </div>
 
 
     <div class="hero-photo">
 
-        <!-- REPLACE WITH CUSTOMER PHOTO -->
 
         <img
             src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85"
+
             alt="Wedding">
+
 
         <div
             class="photo-label"
+
             data-en="Our beginning"
+
             data-hy="Մեր սկիզբը"
+
             data-ru="Наше начало">
 
             Our beginning
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      INTRO
-========================= -->
+===================================================== -->
 
 <section class="intro">
 
+
     <div class="intro-inner">
+
 
         <div
             class="small-title"
+
             data-en="The beginning of forever"
+
             data-hy="Հավերժության սկիզբը"
+
             data-ru="Начало нашей вечности">
 
             The beginning of forever
@@ -668,8 +1135,11 @@ footer{
 
 
         <h2
+
             data-en="We are getting married."
+
             data-hy="Մենք ամուսնանում ենք։"
+
             data-ru="Мы женимся.">
 
             We are getting married.
@@ -678,55 +1148,75 @@ footer{
 
 
         <p
+
             data-en="With great joy, we invite you to celebrate this beautiful chapter of our lives with us. Your presence will make our day even more special."
+
             data-hy="Մեծ ուրախությամբ հրավիրում ենք ձեզ մեզ հետ նշելու մեր կյանքի այս գեղեցիկ նոր էջը։ Ձեր ներկայությունը մեր օրը կդարձնի էլ ավելի յուրահատուկ։"
+
             data-ru="С большой радостью приглашаем вас разделить с нами эту прекрасную главу нашей жизни. Ваше присутствие сделает наш день ещё более особенным.">
 
             With great joy, we invite you to celebrate this beautiful chapter of our lives with us. Your presence will make our day even more special.
 
         </p>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      STORY
-========================= -->
+===================================================== -->
 
 <section class="story">
 
+
     <div class="story-photo">
 
+
         <img
+
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85"
+
             alt="Couple">
+
 
     </div>
 
 
     <div class="story-content">
 
+
         <div class="story-number">
+
             01
+
         </div>
 
 
         <h2
+
             data-en="A day to remember."
+
             data-hy="Օր, որը կհիշենք։"
+
             data-ru="День, который мы запомним.">
 
             A day<br>
+
             to remember.
 
         </h2>
 
 
         <p
+
             data-en="From the first moment to the last dance, we hope to share every beautiful moment surrounded by the people we love."
+
             data-hy="Առաջին պահից մինչև վերջին պարը ցանկանում ենք կիսվել յուրաքանչյուր գեղեցիկ պահով՝ շրջապատված մեր սիրելի մարդկանցով։"
+
             data-ru="От первого мгновения до последнего танца мы хотим разделить каждый прекрасный момент в окружении любимых людей.">
 
             From the first moment to the last dance,
@@ -735,22 +1225,29 @@ footer{
 
         </p>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      EVENTS
-========================= -->
+===================================================== -->
 
 <section class="event-section">
 
+
     <div class="section-heading">
 
+
         <span
+
             data-en="Save the date"
+
             data-hy="Նշեք օրը"
+
             data-ru="Сохраните дату">
 
             Save the date
@@ -759,13 +1256,17 @@ footer{
 
 
         <h2
+
             data-en="The Celebration"
+
             data-hy="Տոնակատարությունը"
+
             data-ru="Празднование">
 
             The Celebration
 
         </h2>
+
 
     </div>
 
@@ -773,138 +1274,213 @@ footer{
     <div class="events">
 
 
+        <!-- EVENT 1 -->
+
         <div class="event">
 
+
             <div class="event-time">
+
                 15:30
+
             </div>
+
 
             <div class="event-info">
 
+
                 <h3
+
                     data-en="Wedding Ceremony"
+
                     data-hy="Պսակադրություն"
+
                     data-ru="Церемония бракосочетания">
 
                     Wedding Ceremony
 
                 </h3>
 
+
                 <p
+
                     data-en="St. Grigor Lusavorich Church"
+
                     data-hy="Սուրբ Գրիգոր Լուսավորիչ եկեղեցի"
+
                     data-ru="Церковь Святого Григория Просветителя">
 
                     St. Grigor Lusavorich Church
 
                 </p>
 
+
             </div>
 
+
             <div
+
                 class="event-location"
+
                 data-en="Yerevan"
+
                 data-hy="Երևան"
+
                 data-ru="Ереван">
 
                 Yerevan
 
             </div>
 
+
         </div>
 
 
+        <!-- EVENT 2 -->
+
         <div class="event">
 
+
             <div class="event-time">
+
                 18:00
+
             </div>
+
 
             <div class="event-info">
 
+
                 <h3
+
                     data-en="Dinner & Celebration"
+
                     data-hy="Ընթրիք և տոնակատարություն"
+
                     data-ru="Ужин и празднование">
 
                     Dinner & Celebration
 
                 </h3>
 
-                <p>
+
+                <p
+
+                    data-en="Adana Complex"
+
+                    data-hy="Ադանա համալիր"
+
+                    data-ru="Adana Complex">
+
                     Adana Complex
+
                 </p>
+
 
             </div>
 
+
             <div
+
                 class="event-location"
+
                 data-en="Yerevan"
+
                 data-hy="Երևան"
+
                 data-ru="Ереван">
 
                 Yerevan
 
             </div>
 
+
         </div>
 
 
+        <!-- EVENT 3 -->
+
         <div class="event">
 
+
             <div class="event-time">
+
                 21:00
+
             </div>
+
 
             <div class="event-info">
 
+
                 <h3
+
                     data-en="Let the Party Begin"
+
                     data-hy="Թող խնջույքը սկսվի"
+
                     data-ru="Пусть праздник начнётся">
 
                     Let the Party Begin
 
                 </h3>
 
+
                 <p
+
                     data-en="Music · Dancing · Celebration"
+
                     data-hy="Երաժշտություն · Պար · Տոնակատարություն"
+
                     data-ru="Музыка · Танцы · Праздник">
 
                     Music · Dancing · Celebration
 
                 </p>
 
+
             </div>
 
+
             <div
+
                 class="event-location"
+
                 data-en="Reception"
+
                 data-hy="Ընդունելություն"
+
                 data-ru="Банкет">
 
                 Reception
 
             </div>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      COUNTDOWN
-========================= -->
+===================================================== -->
 
 <section class="countdown-section">
 
+
     <div
+
         class="small-title"
+
         data-en="Counting the moments"
+
         data-hy="Հաշվում ենք պահերը"
+
         data-ru="Считаем мгновения">
 
         Counting the moments
@@ -913,8 +1489,11 @@ footer{
 
 
     <h2
+
         data-en="Until we say I do"
+
         data-hy="Մինչև մեր «Այո»-ն"
+
         data-ru="До нашего «Да»">
 
         Until we say I do
@@ -927,104 +1506,156 @@ footer{
 
         <div class="count">
 
-            <div
-                class="number"
-                id="days">
-                00
-            </div>
 
             <div
+
+                class="number"
+
+                id="days">
+
+                00
+
+            </div>
+
+
+            <div
+
                 class="label"
+
                 data-en="Days"
+
                 data-hy="Օր"
+
                 data-ru="Дней">
 
                 Days
 
             </div>
 
+
         </div>
 
 
         <div class="count">
 
-            <div
-                class="number"
-                id="hours">
-                00
-            </div>
 
             <div
+
+                class="number"
+
+                id="hours">
+
+                00
+
+            </div>
+
+
+            <div
+
                 class="label"
+
                 data-en="Hours"
+
                 data-hy="Ժամ"
+
                 data-ru="Часов">
 
                 Hours
 
             </div>
 
+
         </div>
 
 
         <div class="count">
 
-            <div
-                class="number"
-                id="minutes">
-                00
-            </div>
 
             <div
+
+                class="number"
+
+                id="minutes">
+
+                00
+
+            </div>
+
+
+            <div
+
                 class="label"
+
                 data-en="Minutes"
+
                 data-hy="Րոպե"
+
                 data-ru="Минут">
 
                 Minutes
 
             </div>
 
+
         </div>
 
 
         <div class="count">
 
-            <div
-                class="number"
-                id="seconds">
-                00
-            </div>
 
             <div
+
+                class="number"
+
+                id="seconds">
+
+                00
+
+            </div>
+
+
+            <div
+
                 class="label"
+
                 data-en="Seconds"
+
                 data-hy="Վայրկյան"
+
                 data-ru="Секунд">
 
                 Seconds
 
             </div>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
-     RSVP
-========================= -->
+<!-- =====================================================
+     JOIN US
+===================================================== -->
 
-<section class="rsvp">
+<section class="join-section" id="join">
 
-    <div class="rsvp-box">
+
+    <div class="join-box">
+
 
         <div
+
             class="small-title"
+
             data-en="We hope to see you"
+
             data-hy="Սպասում ենք ձեզ"
+
             data-ru="Мы будем рады вас видеть">
 
             We hope to see you
@@ -1033,8 +1664,11 @@ footer{
 
 
         <h2
+
             data-en="Join Us"
+
             data-hy="Միացեք մեզ"
+
             data-ru="Присоединяйтесь">
 
             Join Us
@@ -1043,85 +1677,509 @@ footer{
 
 
         <p
-            data-en="Please let us know if you will be celebrating with us. We cannot wait to share this special day with you."
-            data-hy="Խնդրում ենք տեղեկացնել՝ կմիանա՞ք մեզ այս գեղեցիկ օրվա տոնակատարությանը։ Մենք անհամբեր սպասում ենք այս հատուկ օրը ձեզ հետ կիսելուն։"
-            data-ru="Пожалуйста, сообщите нам, будете ли вы праздновать этот особенный день вместе с нами. Мы с нетерпением ждём встречи с вами.">
+
+            data-en="Please let us know if you will be celebrating this special day with us."
+
+            data-hy="Խնդրում ենք տեղեկացնել՝ կմիանա՞ք մեզ այս հատուկ օրվա տոնակատարությանը։"
+
+            data-ru="Пожалуйста, сообщите нам, будете ли вы праздновать этот особенный день вместе с нами.">
 
             Please let us know if you will be celebrating
-            with us. We cannot wait to share this special
-            day with you.
+            this special day with us.
 
         </p>
 
 
-        <a
-            href="#"
-            class="rsvp-button"
-            data-en="RSVP"
-            data-hy="ՀԱՍՏԱՏԵԼ ՄԱՍՆԱԿՑՈՒԹՅՈՒՆԸ"
-            data-ru="ПОДТВЕРДИТЬ УЧАСТИЕ">
+        <!-- JOIN US BUTTON -->
 
-            RSVP
+        <a
+
+            href="#joinForm"
+
+            class="join-button"
+
+            id="joinButton"
+
+            data-en="Join Us"
+
+            data-hy="Միացեք մեզ"
+
+            data-ru="Присоединяйтесь">
+
+            Join Us
 
         </a>
 
+
+        <!-- FORM -->
+
+        <form
+
+            class="join-form"
+
+            id="joinForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+
+                <label
+
+                    data-en="Your name"
+
+                    data-hy="Ձեր անունը"
+
+                    data-ru="Ваше имя">
+
+                    Your name
+
+                </label>
+
+
+                <input
+
+                    type="text"
+
+                    id="guestName"
+
+                    required
+
+                    data-placeholder-en="Your name"
+
+                    data-placeholder-hy="Ձեր անունը"
+
+                    data-placeholder-ru="Ваше имя"
+
+                    placeholder="Your name">
+
+
+            </div>
+
+
+            <!-- ATTENDANCE -->
+
+            <div class="form-group">
+
+
+                <label
+
+                    data-en="Will you attend?"
+
+                    data-hy="Կմիանա՞ք մեզ"
+
+                    data-ru="Вы будете присутствовать?">
+
+                    Will you attend?
+
+                </label>
+
+
+                <div class="attendance-options">
+
+
+                    <div class="attendance-option">
+
+
+                        <input
+
+                            type="radio"
+
+                            name="attendance"
+
+                            id="attending"
+
+                            value="yes"
+
+                            required>
+
+
+                        <label
+
+                            for="attending"
+
+                            data-en="Yes, I'll be there"
+
+                            data-hy="Այո, կմիանամ"
+
+                            data-ru="Да, я буду">
+
+                            Yes, I'll be there
+
+                        </label>
+
+
+                    </div>
+
+
+                    <div class="attendance-option">
+
+
+                        <input
+
+                            type="radio"
+
+                            name="attendance"
+
+                            id="notAttending"
+
+                            value="no">
+
+
+                        <label
+
+                            for="notAttending"
+
+                            data-en="Sadly, I can't"
+
+                            data-hy="Ցավոք, չեմ կարող"
+
+                            data-ru="К сожалению, не смогу">
+
+                            Sadly, I can't
+
+                        </label>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- NUMBER OF GUESTS -->
+
+            <div class="form-group">
+
+
+                <label
+
+                    data-en="Number of guests"
+
+                    data-hy="Հյուրերի քանակը"
+
+                    data-ru="Количество гостей">
+
+                    Number of guests
+
+                </label>
+
+
+                <select
+
+                    id="guestCount"
+
+                    required>
+
+
+                    <option
+
+                        value=""
+
+                        data-en="Select"
+
+                        data-hy="Ընտրել"
+
+                        data-ru="Выберите">
+
+                        Select
+
+                    </option>
+
+
+                    <option value="1">
+                        1
+                    </option>
+
+
+                    <option value="2">
+                        2
+                    </option>
+
+
+                    <option value="3">
+                        3
+                    </option>
+
+
+                    <option value="4">
+                        4
+                    </option>
+
+
+                    <option value="5">
+                        5
+                    </option>
+
+
+                </select>
+
+
+            </div>
+
+
+            <!-- SIDE -->
+
+            <div class="form-group">
+
+
+                <label
+
+                    data-en="Coming from"
+
+                    data-hy="Ո՞ր կողմի հյուրն եք"
+
+                    data-ru="С чьей стороны вы приглашены">
+
+                    Coming from
+
+                </label>
+
+
+                <div class="side-options">
+
+
+                    <label>
+
+
+                        <input
+
+                            type="radio"
+
+                            name="side"
+
+                            value="bride"
+
+                            required>
+
+
+                        <span
+
+                            data-en="Bride's side"
+
+                            data-hy="Հարսի կողմ"
+
+                            data-ru="Со стороны невесты">
+
+                            Bride's side
+
+                        </span>
+
+
+                    </label>
+
+
+                    <label>
+
+
+                        <input
+
+                            type="radio"
+
+                            name="side"
+
+                            value="groom">
+
+
+                        <span
+
+                            data-en="Groom's side"
+
+                            data-hy="Փեսայի կողմ"
+
+                            data-ru="Со стороны жениха">
+
+                            Groom's side
+
+                        </span>
+
+
+                    </label>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+
+                <label
+
+                    data-en="A message for us"
+
+                    data-hy="Հաղորդագրություն մեզ համար"
+
+                    data-ru="Сообщение для нас">
+
+                    A message for us
+
+                </label>
+
+
+                <textarea
+
+                    id="guestMessage"
+
+                    data-placeholder-en="Write something..."
+
+                    data-placeholder-hy="Գրեք ինչ-որ բան..."
+
+                    data-placeholder-ru="Напишите что-нибудь..."
+
+                    placeholder="Write something..."></textarea>
+
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+
+                type="submit"
+
+                class="join-submit"
+
+                data-en="Join Us"
+
+                data-hy="Միացեք մեզ"
+
+                data-ru="Присоединяйтесь">
+
+                Join Us
+
+            </button>
+
+
+        </form>
+
+
+        <!-- SUCCESS -->
+
+        <div
+
+            class="join-success"
+
+            id="joinSuccess">
+
+
+            <div
+
+                class="success-title"
+
+                data-en="Thank you ♡"
+
+                data-hy="Շնորհակալություն ♡"
+
+                data-ru="Спасибо ♡">
+
+                Thank you ♡
+
+            </div>
+
+
+            <p
+
+                data-en="Your response has been received. We can't wait to celebrate with you."
+
+                data-hy="Ձեր պատասխանը ստացվել է։ Մենք անհամբեր սպասում ենք ձեզ հետ տոնելուն։"
+
+                data-ru="Ваш ответ получен. Мы с нетерпением ждём возможности отпраздновать вместе с вами.">
+
+                Your response has been received.
+                We can't wait to celebrate with you.
+
+            </p>
+
+
+        </div>
+
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      FINAL PHOTO
-========================= -->
+===================================================== -->
 
 <section class="final-photo">
 
+
     <img
+
         src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=90"
+
         alt="Wedding celebration">
 
 
     <div class="final-overlay">
 
+
         <h2
+
             data-en="See you there."
+
             data-hy="Կհանդիպենք այնտեղ։"
+
             data-ru="До встречи!">
 
             See you there.
 
         </h2>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
+
     <div class="footer-names">
+
         Elise & Daniel
+
     </div>
 
+
     <div class="footer-date">
+
         12 · 09 · 2028
+
     </div>
+
 
 </footer>
 
 
 <script>
 
-/* =========================
+/* =====================================================
    COUNTDOWN
-========================= */
+===================================================== */
 
 const weddingDate =
-    new Date("September 12, 2028 15:30:00").getTime();
+    new Date(
+        "September 12, 2028 15:30:00"
+    ).getTime();
 
 
 function updateCountdown(){
@@ -1136,8 +2194,11 @@ function updateCountdown(){
     if(distance <= 0){
 
         document.getElementById("days").innerHTML = "00";
+
         document.getElementById("hours").innerHTML = "00";
+
         document.getElementById("minutes").innerHTML = "00";
+
         document.getElementById("seconds").innerHTML = "00";
 
         return;
@@ -1153,24 +2214,33 @@ function updateCountdown(){
 
     const hours =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60 * 24)) /
+            (
+                distance %
+                (1000 * 60 * 60 * 24)
+            )
+            /
             (1000 * 60 * 60)
         );
 
 
     const minutes =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60)) /
+            (
+                distance %
+                (1000 * 60 * 60)
+            )
+            /
             (1000 * 60)
         );
 
 
     const seconds =
         Math.floor(
-            (distance %
-            (1000 * 60)) /
+            (
+                distance %
+                (1000 * 60)
+            )
+            /
             1000
         );
 
@@ -1186,6 +2256,7 @@ function updateCountdown(){
 
     document.getElementById("seconds").innerHTML =
         String(seconds).padStart(2,"0");
+
 }
 
 
@@ -1197,17 +2268,21 @@ setInterval(
 );
 
 
-/* =========================
+/* =====================================================
    LANGUAGE SWITCHER
-========================= */
+===================================================== */
 
 let currentLanguage =
-    localStorage.getItem("invitationLanguage") || "en";
+    localStorage.getItem(
+        "invitationLanguage"
+    ) || "en";
 
 
 function changeLanguage(language){
 
-    currentLanguage = language;
+    currentLanguage =
+        language;
+
 
     localStorage.setItem(
         "invitationLanguage",
@@ -1219,8 +2294,12 @@ function changeLanguage(language){
         language;
 
 
+    /* TEXT */
+
     document
-        .querySelectorAll("[data-" + language + "]")
+        .querySelectorAll(
+            "[data-" + language + "]"
+        )
         .forEach(element => {
 
             element.innerHTML =
@@ -1231,11 +2310,33 @@ function changeLanguage(language){
         });
 
 
+    /* PLACEHOLDERS */
+
     document
-        .querySelectorAll(".language-switcher button")
+        .querySelectorAll(
+            "[data-placeholder-" + language + "]"
+        )
+        .forEach(element => {
+
+            element.placeholder =
+                element.getAttribute(
+                    "data-placeholder-" + language
+                );
+
+        });
+
+
+    /* LANGUAGE BUTTONS */
+
+    document
+        .querySelectorAll(
+            ".language-switcher button"
+        )
         .forEach(button => {
 
-            button.classList.remove("active");
+            button.classList.remove(
+                "active"
+            );
 
         });
 
@@ -1269,11 +2370,92 @@ function changeLanguage(language){
 }
 
 
-/* Load saved language */
+/* =====================================================
+   JOIN US BUTTON
+===================================================== */
 
-changeLanguage(currentLanguage);
+const joinButton =
+    document.getElementById(
+        "joinButton"
+    );
+
+const joinForm =
+    document.getElementById(
+        "joinForm"
+    );
+
+
+joinButton.addEventListener(
+    "click",
+    function(event){
+
+        event.preventDefault();
+
+
+        joinForm.style.display =
+            "block";
+
+
+        setTimeout(
+            function(){
+
+                joinForm.scrollIntoView({
+                    behavior:"smooth",
+                    block:"center"
+                });
+
+            },
+            50
+        );
+
+    }
+);
+
+
+/* =====================================================
+   JOIN FORM
+===================================================== */
+
+const joinSuccess =
+    document.getElementById(
+        "joinSuccess"
+    );
+
+
+joinForm.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        joinForm.style.display =
+            "none";
+
+
+        joinSuccess.style.display =
+            "block";
+
+
+        joinSuccess.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+    }
+);
+
+
+/* =====================================================
+   LOAD SAVED LANGUAGE
+===================================================== */
+
+changeLanguage(
+    currentLanguage
+);
 
 </script>
+
 
 </body>
 </html>
